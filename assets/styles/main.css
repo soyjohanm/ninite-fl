@@ -1,0 +1,76 @@
+/* Estilos cuerpo general */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+main {
+ flex: 1 0 auto;
+}
+
+/* Estilos que modifican el color */
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid #0d47a1 !important;
+  border-bottom: 2px solid #0d47a1 !important;
+}
+ul.dropdown-content.select-dropdown li span {
+  color: #0d47a1;
+  text-align: center;
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #0d47a1 !important;
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0d47a1 !important;
+  -webkit-box-shadow: 0 1px 0 0 #0d47a1 !important;
+          box-shadow: 0 1px 0 0 #0d47a1 !important;
+}
+.input-field .prefix.active,
+.tabs .tab a,
+.tabs .tab a.active,
+.tabs .tab a:hover {
+  color: #0d47a1 !important;
+}
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(13, 71, 161, 0.1);
+}
+.tabs .indicator {
+  background-color: #0d47a1;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #0d47a1 !important;
+}
+
+/* Estilos sección contacto */
+#contactoSection a {
+  font-weight: bold;
+  color: #000000;
+}
